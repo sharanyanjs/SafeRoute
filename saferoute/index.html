@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SafeRoute — Pick the route you'd actually feel okay taking</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <div id="map"></div>
+
+  <!-- Top floating stack -->
+  <div class="top-stack">
+    <div class="tagline">
+      Pick the route you'd <em>actually</em> feel okay taking.
+    </div>
+   <div id="trip-switcher" class="trip-switcher"></div>
+    <div class="search-bar">
+      <div class="search-field">
+        <span class="dot origin"></span>
+        <input id="origin" type="text" value="Jubilee Hills Check Post" readonly />
+      </div>
+      <div class="search-divider"></div>
+      <div class="search-field">
+        <span class="dot dest"></span>
+        <input id="destination" type="text" value="Hitech City" readonly />
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom floating stack -->
+  <div class="bottom-stack">
+
+    <div id="route-container" class="route-container">
+      <div class="route-placeholder">
+        <span class="placeholder-dot"></span>
+        <span>Comparing routes…</span>
+      </div>
+    </div>
+
+    <button id="emergency-toggle" class="emergency-toggle" aria-pressed="false">
+      <span class="emergency-pulse"></span>
+      <span class="emergency-label">Emergency Mode</span>
+    </button>
+
+    <p class="disclaimer">
+      Demo uses simulated contextual labels. Real deployment needs community data,
+      street-level imagery, and municipal lighting records.
+    </p>
+    <p class="footer-signature">SafeRoute · MVP · Hyderabad</p>
+  </div>
+
+  <script src="assets/js/script.js"></script>
+  <script
+    async
+    defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXzCZ4h5Qjk-9XoRnJCY3ssBKCHLNQCbg&callback=initMap">
+  </script>
+    <!-- Why this route? — bottom sheet (hidden by default) -->
+  <div id="sheet-backdrop" class="sheet-backdrop" aria-hidden="true"></div>
+  <aside id="why-sheet" class="why-sheet" role="dialog" aria-modal="true" aria-labelledby="why-title">
+    <div class="sheet-grabber"></div>
+
+    <header class="sheet-header">
+      <h2 id="why-title" class="sheet-title">Why this route?</h2>
+      <button id="sheet-close" class="sheet-close" aria-label="Close">✕</button>
+    </header>
+
+    <div class="sheet-body">
+      <p id="why-tradeoff" class="sheet-tradeoff"></p>
+
+      <h3 class="sheet-section-title">What we compared</h3>
+      <div id="why-labels" class="sheet-labels"></div>
+
+      <div class="sheet-honesty">
+        <span class="honesty-dot"></span>
+        <p>
+          These contextual labels are <strong>simulated for this demo</strong> to validate the trade-off UX.
+          Real deployment would require community-reported data, street-level imagery, and municipal lighting records.
+        </p>
+      </div>
+    </div>
+  </aside>
+</body>
+</html>

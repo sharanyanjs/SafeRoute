@@ -1,0 +1,225 @@
+{
+  "_note": "Simulated route geometry and contextual labels for UX validation. Real deployment would require Routes API + community-reported data + municipal lighting records. See case study.",
+  "trips": [
+    {
+      "id": "jubilee-hitech",
+      "label": "Jubilee Hills → Hitech City",
+      "origin": "Jubilee Hills Check Post",
+      "destination": "Hitech City",
+      "routes": [
+        {
+          "id": "quickest",
+          "name": "Quickest",
+          "tagline": "Fastest way there.",
+          "durationLabel": "18 min",
+          "addedTimeLabel": "Fastest",
+          "polyline": [
+            { "lat": 17.4239, "lng": 78.4121 },
+            { "lat": 17.4265, "lng": 78.4188 },
+            { "lat": 17.4305, "lng": 78.4277 },
+            { "lat": 17.4352, "lng": 78.4392 },
+            { "lat": 17.4414, "lng": 78.4488 },
+            { "lat": 17.4462, "lng": 78.4553 },
+            { "lat": 17.4510, "lng": 78.4620 },
+            { "lat": 17.4552, "lng": 78.4695 },
+            { "lat": 17.4585, "lng": 78.4760 }
+          ],
+          "labels": {
+            "lighting":  "Well-lit for the first 60% — one dark stretch near KBR Park.",
+            "activity":  "Shops close around 10pm. Quiet after that.",
+            "isolation": "Runs past an isolated stretch with no foot traffic after 10pm.",
+            "tradeoff":  "Gets you there 6 minutes faster. You'll pass the KBR Park stretch you told us feels uncomfortable at night."
+          },
+          "accent": "#3b82f6"
+        },
+        {
+          "id": "comfort",
+          "name": "Comfort First",
+          "tagline": "Well-lit, active, familiar.",
+          "durationLabel": "24 min",
+          "addedTimeLabel": "+6 min",
+          "polyline": [
+            { "lat": 17.4239, "lng": 78.4121 },
+            { "lat": 17.4245, "lng": 78.4185 },
+            { "lat": 17.4258, "lng": 78.4262 },
+            { "lat": 17.4285, "lng": 78.4345 },
+            { "lat": 17.4322, "lng": 78.4431 },
+            { "lat": 17.4368, "lng": 78.4518 },
+            { "lat": 17.4419, "lng": 78.4602 },
+            { "lat": 17.4472, "lng": 78.4685 },
+            { "lat": 17.4525, "lng": 78.4748 },
+            { "lat": 17.4585, "lng": 78.4760 }
+          ],
+          "labels": {
+            "lighting":  "Streetlights the whole way. No dark stretches.",
+            "activity":  "Shops and cafés open until 11pm near Madhapur.",
+            "isolation": "Sidewalk on 80% of the route. Foot traffic until late.",
+            "tradeoff":  "Adds 6 minutes. You avoid the KBR Park stretch and stay on lit, active roads the whole way."
+          },
+          "accent": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "madhapur-gachibowli",
+      "label": "Madhapur → Gachibowli",
+      "origin": "Madhapur",
+      "destination": "Gachibowli",
+      "routes": [
+        {
+          "id": "quickest",
+          "name": "Quickest",
+          "tagline": "Through the tech corridor.",
+          "durationLabel": "12 min",
+          "addedTimeLabel": "Fastest",
+          "polyline": [
+            { "lat": 17.4483, "lng": 78.3915 },
+            { "lat": 17.4448, "lng": 78.3872 },
+            { "lat": 17.4402, "lng": 78.3838 },
+            { "lat": 17.4352, "lng": 78.3810 },
+            { "lat": 17.4301, "lng": 78.3785 },
+            { "lat": 17.4248, "lng": 78.3762 }
+          ],
+          "labels": {
+            "lighting":  "Well-lit main road. Two underpasses with dim lighting.",
+            "activity":  "Offices empty by 9pm. Streets get quiet fast.",
+            "isolation": "Underpasses are isolated after 9pm. No foot traffic.",
+            "tradeoff":  "4 minutes faster. You'll pass two dim underpasses with no one around after 9pm."
+          },
+          "accent": "#3b82f6"
+        },
+        {
+          "id": "comfort",
+          "name": "Comfort First",
+          "tagline": "Past open cafes and lit streets.",
+          "durationLabel": "16 min",
+          "addedTimeLabel": "+4 min",
+          "polyline": [
+            { "lat": 17.4483, "lng": 78.3915 },
+            { "lat": 17.4470, "lng": 78.3895 },
+            { "lat": 17.4442, "lng": 78.3868 },
+            { "lat": 17.4408, "lng": 78.3840 },
+            { "lat": 17.4366, "lng": 78.3815 },
+            { "lat": 17.4320, "lng": 78.3790 },
+            { "lat": 17.4275, "lng": 78.3770 },
+            { "lat": 17.4248, "lng": 78.3762 }
+          ],
+          "labels": {
+            "lighting":  "Streetlights throughout. No underpasses.",
+            "activity":  "Cafés and late-night eateries open until midnight.",
+            "isolation": "Active sidewalks, steady foot traffic until late.",
+            "tradeoff":  "Adds 4 minutes. You skip both underpasses and stay on streets with open shops."
+          },
+          "accent": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "banjara-internal",
+      "label": "Banjara Hills Rd 12 → Rd 1",
+      "origin": "Banjara Hills Road No. 12",
+      "destination": "Banjara Hills Road No. 1",
+      "routes": [
+        {
+          "id": "quickest",
+          "name": "Quickest",
+          "tagline": "Short cut past the park.",
+          "durationLabel": "7 min",
+          "addedTimeLabel": "Fastest",
+          "polyline": [
+            { "lat": 17.4156, "lng": 78.4292 },
+            { "lat": 17.4142, "lng": 78.4320 },
+            { "lat": 17.4128, "lng": 78.4352 },
+            { "lat": 17.4115, "lng": 78.4385 },
+            { "lat": 17.4108, "lng": 78.4412 }
+          ],
+          "labels": {
+            "lighting":  "Park stretch is poorly lit. Two broken streetlights.",
+            "activity":  "Nothing open after 8pm. Residential only.",
+            "isolation": "Park side is completely isolated after dark.",
+            "tradeoff":  "3 minutes faster. You'll walk past the unlit side of the park with no one around."
+          },
+          "accent": "#3b82f6"
+        },
+        {
+          "id": "comfort",
+          "name": "Comfort First",
+          "tagline": "Main road past shops.",
+          "durationLabel": "10 min",
+          "addedTimeLabel": "+3 min",
+          "polyline": [
+            { "lat": 17.4156, "lng": 78.4292 },
+            { "lat": 17.4145, "lng": 78.4305 },
+            { "lat": 17.4132, "lng": 78.4330 },
+            { "lat": 17.4120, "lng": 78.4362 },
+            { "lat": 17.4110, "lng": 78.4395 },
+            { "lat": 17.4108, "lng": 78.4412 }
+          ],
+          "labels": {
+            "lighting":  "Fully lit main road. Streetlights on both sides.",
+            "activity":  "Small shops and a pharmacy open until 10pm.",
+            "isolation": "Foot traffic until late. Sidewalk the whole way.",
+            "tradeoff":  "Adds 3 minutes. You skip the park and stay on the lit main road."
+          },
+          "accent": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "kukatpally-ameerpet",
+      "label": "Kukatpally → Ameerpet",
+      "origin": "Kukatpally",
+      "destination": "Ameerpet",
+      "routes": [
+        {
+          "id": "quickest",
+          "name": "Quickest",
+          "tagline": "Busy but direct.",
+          "durationLabel": "14 min",
+          "addedTimeLabel": "Fastest",
+          "polyline": [
+            { "lat": 17.4948, "lng": 78.3997 },
+            { "lat": 17.4892, "lng": 78.4010 },
+            { "lat": 17.4830, "lng": 78.4025 },
+            { "lat": 17.4762, "lng": 78.4042 },
+            { "lat": 17.4695, "lng": 78.4060 },
+            { "lat": 17.4630, "lng": 78.4080 },
+            { "lat": 17.4570, "lng": 78.4102 },
+            { "lat": 17.4520, "lng": 78.4128 }
+          ],
+          "labels": {
+            "lighting":  "Well-lit main road. Heavy traffic most of the night.",
+            "activity":  "Street vendors and shops open until 11pm.",
+            "isolation": "Crowded but busy — no isolation, but no quiet either.",
+            "tradeoff":  "3 minutes faster. It's busy but crowded. No isolated stretches."
+          },
+          "accent": "#3b82f6"
+        },
+        {
+          "id": "comfort",
+          "name": "Comfort First",
+          "tagline": "Calmer side streets.",
+          "durationLabel": "18 min",
+          "addedTimeLabel": "+4 min",
+          "polyline": [
+            { "lat": 17.4948, "lng": 78.3997 },
+            { "lat": 17.4902, "lng": 78.4022 },
+            { "lat": 17.4845, "lng": 78.4042 },
+            { "lat": 17.4782, "lng": 78.4058 },
+            { "lat": 17.4710, "lng": 78.4078 },
+            { "lat": 17.4640, "lng": 78.4095 },
+            { "lat": 17.4578, "lng": 78.4115 },
+            { "lat": 17.4520, "lng": 78.4128 }
+          ],
+          "labels": {
+            "lighting":  "Well-lit residential streets. Streetlights working.",
+            "activity":  "Some tea stalls open late. Quiet but not empty.",
+            "isolation": "Low foot traffic but visible from homes. Not isolated.",
+            "tradeoff":  "Adds 4 minutes. You skip the crowded main road for calmer residential streets."
+          },
+          "accent": "#10b981"
+        }
+      ]
+    }
+  ]
+}
